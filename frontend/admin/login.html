@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | KRISHNABATI PARK</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="admin-wrap">
+    <div class="admin-card">
+        <h2>Park Admin</h2>
+        <p class="muted">Administration portal</p>
+
+        <div class="notice">
+            Demo interface only. Secure server-side authentication
+            has not been configured yet.
+        </div>
+
+        <form id="admin-login">
+            <div class="field">
+                <label for="username">Username</label>
+                <input id="username" required autocomplete="username">
+            </div>
+
+            <div class="field" style="margin-top:15px">
+                <label for="password">Password</label>
+                <input id="password" type="password" required
+                    autocomplete="current-password">
+            </div>
+
+            <button class="btn" style="margin-top:20px;width:100%"
+                type="submit">Continue</button>
+        </form>
+
+        <p id="login-message" class="notice hidden"></p>
+        <p><a href="../index.html">← Back to website</a></p>
+    </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
