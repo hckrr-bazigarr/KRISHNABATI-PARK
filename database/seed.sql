@@ -1,0 +1,3 @@
+-- Initial database seed.
+-- No ticket prices or admin passwords are inserted automatically.
+-- Configure these securely through the future admin setup process.
