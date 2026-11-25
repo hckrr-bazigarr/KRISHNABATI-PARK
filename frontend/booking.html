@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets | KRISHNABATI ULIR PARK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container nav">
+        <a href="index.html" class="brand">KRISHNABATI <span>PARK</span></a>
+        <button class="menu-btn" aria-label="Toggle navigation"
+            aria-expanded="false">☰</button>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html" class="active">Booking</a>
+            <a href="contact.html">Contact</a>
+            <a href="my-booking.html">My Booking</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">PLAN YOUR VISIT</span>
+            <h1>Book Your Visit</h1>
+            <p>Submit your visitor details to create a local demo booking request.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="form-card">
+                <h2>Visitor Details</h2>
+                <p class="muted">Please enter your visit information.</p>
+
+                <div class="notice">
+                    Demo mode: this form saves a request only in this browser.
+                    It does not confirm a ticket, charge money or process UPI payments.
+                    Ticket prices must be configured by the park administrator.
+                </div>
+
+                <form id="booking-form">
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="name">Full Name</label>
+                            <input id="name" name="name" required maxlength="100">
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" type="tel"
+                                required maxlength="20">
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email Address</label>
+                            <input id="email" name="email" type="email"
+                                maxlength="150">
+                        </div>
+
+                        <div class="field">
+                            <label for="date">Visit Date</label>
+                            <input id="date" name="date" type="date" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="slot">Preferred Time</label>
+                            <select id="slot" name="slot" required>
+                                <option value="">Select time</option>
+                                <option>10:00 AM</option>
+                                <option>11:00 AM</option>
+                                <option>12:00 PM</option>
+                                <option>01:00 PM</option>
+                                <option>02:00 PM</option>
+                                <option>03:00 PM</option>
+                                <option>04:00 PM</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="adults">Adults</label>
+                            <input id="adults" name="adults" type="number"
+                                min="0" max="50" value="2" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="children">Children</label>
+                            <input id="children" name="children" type="number"
+                                min="0" max="50" value="0" required>
+                        </div>
+
+                        <div class="field full">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="3"
+                                maxlength="500"
+                                placeholder="Optional message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="booking-summary">
+                        <strong>Ticket pricing</strong>
+                        <p class="muted">
+                            Pricing and payment confirmation are not configured yet.
+                            No payment will be collected through this demo form.
+                        </p>
+                    </div>
+
+                    <button class="btn" type="submit">Submit Demo Request</button>
+                </form>
+
+                <div id="booking-result" class="notice hidden" role="status"
+                    aria-live="polite"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <strong>KRISHNABATI ULIR PARK</strong>
+        <small>© <span data-year></span> All rights reserved.</small>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/booking.js"></script>
+</body>
+</html>
