@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Booking | KRISHNABATI ULIR PARK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container nav">
+        <a href="index.html" class="brand">KRISHNABATI <span>PARK</span></a>
+        <button class="menu-btn" aria-label="Toggle navigation"
+            aria-expanded="false">☰</button>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+            <a href="my-booking.html" class="active">My Booking</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">VISITOR AREA</span>
+            <h1>My Booking</h1>
+            <p>View demo booking requests saved in this browser.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="form-card">
+                <h2>Your Demo Requests</h2>
+                <p class="muted">
+                    These records are stored only in this browser.
+                    They are not available to the park administration.
+                </p>
+                <div id="my-bookings"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <strong>KRISHNABATI ULIR PARK</strong>
+        <small>© <span data-year></span> All rights reserved.</small>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/my-booking.js"></script>
+</body>
+</html>
